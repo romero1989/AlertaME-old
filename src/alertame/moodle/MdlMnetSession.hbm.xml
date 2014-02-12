@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlMnetSession" table="mdl_mnet_session" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="userid" type="long">
+            <column name="userid" not-null="true" />
+        </property>
+        <property name="username" type="string">
+            <column name="username" length="100" not-null="true" />
+        </property>
+        <property name="token" type="string">
+            <column name="token" length="40" not-null="true" unique="true" />
+        </property>
+        <property name="mnethostid" type="long">
+            <column name="mnethostid" not-null="true" />
+        </property>
+        <property name="useragent" type="string">
+            <column name="useragent" length="40" not-null="true" />
+        </property>
+        <property name="confirmTimeout" type="long">
+            <column name="confirm_timeout" not-null="true" />
+        </property>
+        <property name="sessionId" type="string">
+            <column name="session_id" length="40" not-null="true" />
+        </property>
+        <property name="expires" type="long">
+            <column name="expires" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

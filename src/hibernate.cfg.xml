@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <!-- <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:8889/moodle</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property> -->
+    <!-- <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:5520/moodle</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">root</property>  -->
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:5520/moodle</property>
+    <property name="hibernate.connection.username">alunomonografia</property>
+    <property name="hibernate.connection.password">912w7P2oLoFo2</property>
+    <property name="hibernate.default_batch_fetch_size">20</property>
+    <property name="hibernate.connection.pool_size">3</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping class="alertame.moodle.AdodbLogsql" file="" jar="" package="alertame.moodle" resource="alertame/moodle/AdodbLogsql.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlAlertame" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlAlertame.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlAlertameAtividades" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlAlertameAtividades.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlAlertameCategoria" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlAlertameCategoria.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlAlertameEnviados" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlAlertameEnviados.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlAlertameEventos" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlAlertameEventos.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlAlertameInteresses" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlAlertameInteresses.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlAlertameNotificacao" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlAlertameNotificacao.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlAssignment" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlAssignment.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlAssignmentSubmissions" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlAssignmentSubmissions.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlBackupConfig" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlBackupConfig.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlBackupCourses" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlBackupCourses.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlBackupFiles" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlBackupFiles.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlBackupIds" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlBackupIds.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlBackupLog" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlBackupLog.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlBlock" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlBlock.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlBlockInstance" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlBlockInstance.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlBlockPinned" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlBlockPinned.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlBlockRssClient" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlBlockRssClient.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlBlockSearchDocuments" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlBlockSearchDocuments.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlCacheFilters" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlCacheFilters.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlCacheFlags" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlCacheFlags.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlCacheText" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlCacheText.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlCapabilities" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlCapabilities.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlChat" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlChat.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlChatMessages" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlChatMessages.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlChatUsers" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlChatUsers.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlChoice" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlChoice.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlChoiceAnswers" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlChoiceAnswers.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlChoiceOptions" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlChoiceOptions.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlConfig" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlConfig.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlConfigPlugins" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlConfigPlugins.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlContext" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlContext.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlContextTemp" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlContextTemp.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlCourse" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlCourse.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlCourseAllowedModules" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlCourseAllowedModules.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlCourseCategories" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlCourseCategories.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlCourseDisplay" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlCourseDisplay.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlCourseMeta" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlCourseMeta.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlCourseModules" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlCourseModules.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlCourseRequest" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlCourseRequest.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlCourseSections" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlCourseSections.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlData" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlData.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlDataComments" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlDataComments.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlDataContent" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlDataContent.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlDataFields" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlDataFields.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlDataRatings" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlDataRatings.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlDataRecords" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlDataRecords.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlEnrolAuthorize" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlEnrolAuthorize.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlEnrolAuthorizeRefunds" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlEnrolAuthorizeRefunds.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlEnrolPaypal" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlEnrolPaypal.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlEvent" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlEvent.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlEventsHandlers" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlEventsHandlers.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlEventsQueue" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlEventsQueue.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlEventsQueueHandlers" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlEventsQueueHandlers.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlForum" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlForum.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlForumDiscussions" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlForumDiscussions.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlForumPosts" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlForumPosts.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlForumQueue" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlForumQueue.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlForumRatings" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlForumRatings.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlForumRead" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlForumRead.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlForumSubscriptions" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlForumSubscriptions.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlForumTrackPrefs" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlForumTrackPrefs.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGlossary" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGlossary.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGlossaryAlias" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGlossaryAlias.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGlossaryCategories" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGlossaryCategories.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGlossaryComments" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGlossaryComments.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGlossaryEntries" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGlossaryEntries.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGlossaryEntriesCategories" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGlossaryEntriesCategories.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGlossaryFormats" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGlossaryFormats.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGlossaryRatings" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGlossaryRatings.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGradeCategories" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGradeCategories.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGradeCategoriesHistory" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGradeCategoriesHistory.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGradeGrades" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGradeGrades.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGradeGradesHistory" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGradeGradesHistory.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGradeImportNewitem" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGradeImportNewitem.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGradeImportValues" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGradeImportValues.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGradeItems" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGradeItems.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGradeItemsHistory" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGradeItemsHistory.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGradeLetters" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGradeLetters.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGradeOutcomes" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGradeOutcomes.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGradeOutcomesCourses" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGradeOutcomesCourses.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGradeOutcomesHistory" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGradeOutcomesHistory.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGradeSettings" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGradeSettings.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGroupings" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGroupings.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGroupingsGroups" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGroupingsGroups.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGroups" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGroups.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlGroupsMembers" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlGroupsMembers.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlHotpot" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlHotpot.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlHotpotAttempts" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlHotpotAttempts.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlHotpotDetails" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlHotpotDetails.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlHotpotQuestions" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlHotpotQuestions.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlHotpotResponses" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlHotpotResponses.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlHotpotStrings" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlHotpotStrings.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlJournal" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlJournal.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlJournalEntries" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlJournalEntries.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlLabel" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlLabel.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlLams" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlLams.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlLesson" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlLesson.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlLessonAnswers" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlLessonAnswers.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlLessonAttempts" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlLessonAttempts.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlLessonBranch" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlLessonBranch.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlLessonDefault" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlLessonDefault.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlLessonGrades" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlLessonGrades.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlLessonHighScores" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlLessonHighScores.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlLessonPages" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlLessonPages.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlLessonTimer" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlLessonTimer.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlLog" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlLog.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlLogDisplay" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlLogDisplay.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlMessage" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlMessage.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlMessageContacts" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlMessageContacts.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlMessageRead" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlMessageRead.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlMnetApplication" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlMnetApplication.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlMnetEnrolAssignments" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlMnetEnrolAssignments.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlMnetEnrolCourse" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlMnetEnrolCourse.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlMnetHost" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlMnetHost.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlMnetHost2service" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlMnetHost2service.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlMnetLog" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlMnetLog.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlMnetRpc" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlMnetRpc.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlMnetService" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlMnetService.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlMnetService2rpc" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlMnetService2rpc.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlMnetSession" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlMnetSession.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlMnetSsoAccessControl" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlMnetSsoAccessControl.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlModules" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlModules.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlPost" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlPost.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestion" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestion.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionAnswers" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionAnswers.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionAttempts" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionAttempts.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionCalculated" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionCalculated.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionCategories" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionCategories.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionDatasetDefinitions" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionDatasetDefinitions.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionDatasetItems" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionDatasetItems.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionDatasets" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionDatasets.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionMatch" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionMatch.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionMatchSub" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionMatchSub.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionMultianswer" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionMultianswer.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionMultichoice" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionMultichoice.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionNumerical" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionNumerical.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionNumericalUnits" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionNumericalUnits.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionRandomsamatch" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionRandomsamatch.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionSessions" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionSessions.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionShortanswer" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionShortanswer.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionStates" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionStates.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuestionTruefalse" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuestionTruefalse.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuiz" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuiz.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuizAttempts" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuizAttempts.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuizFeedback" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuizFeedback.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuizGrades" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuizGrades.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuizQuestionInstances" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuizQuestionInstances.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlQuizQuestionVersions" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlQuizQuestionVersions.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlResource" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlResource.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlRole" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlRole.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlRoleAllowAssign" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlRoleAllowAssign.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlRoleAllowOverride" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlRoleAllowOverride.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlRoleAssignments" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlRoleAssignments.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlRoleCapabilities" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlRoleCapabilities.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlRoleNames" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlRoleNames.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlRoleSortorder" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlRoleSortorder.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlScale" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlScale.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlScaleHistory" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlScaleHistory.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlScorm" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlScorm.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlScormScoes" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlScormScoes.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlScormScoesData" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlScormScoesData.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlScormScoesTrack" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlScormScoesTrack.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlScormSeqMapinfo" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlScormSeqMapinfo.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlScormSeqObjective" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlScormSeqObjective.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlScormSeqRolluprule" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlScormSeqRolluprule.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlScormSeqRolluprulecond" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlScormSeqRolluprulecond.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlScormSeqRulecond" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlScormSeqRulecond.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlScormSeqRuleconds" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlScormSeqRuleconds.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlSessions2" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlSessions2.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlStatsDaily" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlStatsDaily.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlStatsMonthly" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlStatsMonthly.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlStatsUserDaily" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlStatsUserDaily.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlStatsUserMonthly" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlStatsUserMonthly.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlStatsUserWeekly" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlStatsUserWeekly.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlStatsWeekly" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlStatsWeekly.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlSurvey" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlSurvey.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlSurveyAnalysis" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlSurveyAnalysis.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlSurveyAnswers" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlSurveyAnswers.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlSurveyQuestions" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlSurveyQuestions.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlTag" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlTag.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlTagCorrelation" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlTagCorrelation.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlTagInstance" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlTagInstance.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlTimezone" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlTimezone.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlUser" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlUser.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlUserInfoCategory" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlUserInfoCategory.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlUserInfoData" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlUserInfoData.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlUserInfoField" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlUserInfoField.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlUserLastaccess" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlUserLastaccess.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlUserPreferences" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlUserPreferences.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlUserPrivateKey" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlUserPrivateKey.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlWebdavLocks" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlWebdavLocks.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlWiki" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlWiki.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlWikiEntries" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlWikiEntries.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlWikiLocks" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlWikiLocks.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlWikiPages" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlWikiPages.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlWorkshop" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlWorkshop.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlWorkshopAssessments" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlWorkshopAssessments.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlWorkshopComments" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlWorkshopComments.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlWorkshopElements" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlWorkshopElements.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlWorkshopGrades" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlWorkshopGrades.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlWorkshopRubrics" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlWorkshopRubrics.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlWorkshopStockcomments" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlWorkshopStockcomments.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlWorkshopSubmissions" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlWorkshopSubmissions.hbm.xml"/>
+    <mapping class="alertame.moodle.MdlAlertameEncerramento" file="" jar="" package="alertame.moodle" resource="alertame/moodle/MdlAlertameEncerramento.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

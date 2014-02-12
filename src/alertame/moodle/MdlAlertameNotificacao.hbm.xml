@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlAlertameNotificacao" table="mdl_alertame_notificacao" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="descricao" type="string">
+            <column name="descricao" length="105" />
+        </property>
+        <property name="roleid" type="java.lang.Long">
+            <column name="roleid" />
+        </property>
+        <property name="categoriaid" type="java.lang.Long">
+            <column name="categoriaid" />
+        </property>
+        <property name="tipo" type="string">
+            <column name="tipo" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlGradeCategories" table="mdl_grade_categories" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="courseid" type="long">
+            <column name="courseid" not-null="true" />
+        </property>
+        <property name="parent" type="java.lang.Long">
+            <column name="parent" />
+        </property>
+        <property name="depth" type="long">
+            <column name="depth" not-null="true" />
+        </property>
+        <property name="path" type="string">
+            <column name="path" />
+        </property>
+        <property name="fullname" type="string">
+            <column name="fullname" not-null="true" />
+        </property>
+        <property name="aggregation" type="long">
+            <column name="aggregation" not-null="true" />
+        </property>
+        <property name="keephigh" type="long">
+            <column name="keephigh" not-null="true" />
+        </property>
+        <property name="droplow" type="long">
+            <column name="droplow" not-null="true" />
+        </property>
+        <property name="aggregateonlygraded" type="boolean">
+            <column name="aggregateonlygraded" not-null="true" />
+        </property>
+        <property name="aggregateoutcomes" type="boolean">
+            <column name="aggregateoutcomes" not-null="true" />
+        </property>
+        <property name="aggregatesubcats" type="boolean">
+            <column name="aggregatesubcats" not-null="true" />
+        </property>
+        <property name="timecreated" type="long">
+            <column name="timecreated" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

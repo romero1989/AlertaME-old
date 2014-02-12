@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlQuiz" table="mdl_quiz" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="course" type="long">
+            <column name="course" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="intro" type="string">
+            <column name="intro" length="65535" not-null="true" />
+        </property>
+        <property name="timeopen" type="long">
+            <column name="timeopen" not-null="true" />
+        </property>
+        <property name="timeclose" type="long">
+            <column name="timeclose" not-null="true" />
+        </property>
+        <property name="optionflags" type="long">
+            <column name="optionflags" not-null="true" />
+        </property>
+        <property name="penaltyscheme" type="short">
+            <column name="penaltyscheme" not-null="true" />
+        </property>
+        <property name="attempts" type="int">
+            <column name="attempts" not-null="true" />
+        </property>
+        <property name="attemptonlast" type="short">
+            <column name="attemptonlast" not-null="true" />
+        </property>
+        <property name="grademethod" type="short">
+            <column name="grademethod" not-null="true" />
+        </property>
+        <property name="decimalpoints" type="short">
+            <column name="decimalpoints" not-null="true" />
+        </property>
+        <property name="review" type="long">
+            <column name="review" not-null="true" />
+        </property>
+        <property name="questionsperpage" type="long">
+            <column name="questionsperpage" not-null="true" />
+        </property>
+        <property name="shufflequestions" type="short">
+            <column name="shufflequestions" not-null="true" />
+        </property>
+        <property name="shuffleanswers" type="short">
+            <column name="shuffleanswers" not-null="true" />
+        </property>
+        <property name="questions" type="string">
+            <column name="questions" length="65535" not-null="true" />
+        </property>
+        <property name="sumgrades" type="long">
+            <column name="sumgrades" not-null="true" />
+        </property>
+        <property name="grade" type="long">
+            <column name="grade" not-null="true" />
+        </property>
+        <property name="timecreated" type="long">
+            <column name="timecreated" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+        <property name="timelimit" type="long">
+            <column name="timelimit" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" not-null="true" />
+        </property>
+        <property name="subnet" type="string">
+            <column name="subnet" not-null="true" />
+        </property>
+        <property name="popup" type="short">
+            <column name="popup" not-null="true" />
+        </property>
+        <property name="delay1" type="long">
+            <column name="delay1" not-null="true" />
+        </property>
+        <property name="delay2" type="long">
+            <column name="delay2" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

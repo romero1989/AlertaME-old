@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlGradeItems" table="mdl_grade_items" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="courseid" type="java.lang.Long">
+            <column name="courseid" />
+        </property>
+        <property name="categoryid" type="java.lang.Long">
+            <column name="categoryid" />
+        </property>
+        <property name="itemname" type="string">
+            <column name="itemname" />
+        </property>
+        <property name="itemtype" type="string">
+            <column name="itemtype" length="30" not-null="true" />
+        </property>
+        <property name="itemmodule" type="string">
+            <column name="itemmodule" length="30" />
+        </property>
+        <property name="iteminstance" type="java.lang.Long">
+            <column name="iteminstance" />
+        </property>
+        <property name="itemnumber" type="java.lang.Long">
+            <column name="itemnumber" />
+        </property>
+        <property name="iteminfo" type="string">
+            <column name="iteminfo" length="16777215" />
+        </property>
+        <property name="idnumber" type="string">
+            <column name="idnumber" />
+        </property>
+        <property name="calculation" type="string">
+            <column name="calculation" length="16777215" />
+        </property>
+        <property name="gradetype" type="short">
+            <column name="gradetype" not-null="true" />
+        </property>
+        <property name="grademax" type="big_decimal">
+            <column name="grademax" precision="10" scale="5" not-null="true" />
+        </property>
+        <property name="grademin" type="big_decimal">
+            <column name="grademin" precision="10" scale="5" not-null="true" />
+        </property>
+        <property name="scaleid" type="java.lang.Long">
+            <column name="scaleid" />
+        </property>
+        <property name="outcomeid" type="java.lang.Long">
+            <column name="outcomeid" />
+        </property>
+        <property name="gradepass" type="big_decimal">
+            <column name="gradepass" precision="10" scale="5" not-null="true" />
+        </property>
+        <property name="multfactor" type="big_decimal">
+            <column name="multfactor" precision="10" scale="5" not-null="true" />
+        </property>
+        <property name="plusfactor" type="big_decimal">
+            <column name="plusfactor" precision="10" scale="5" not-null="true" />
+        </property>
+        <property name="aggregationcoef" type="big_decimal">
+            <column name="aggregationcoef" precision="10" scale="5" not-null="true" />
+        </property>
+        <property name="sortorder" type="long">
+            <column name="sortorder" not-null="true" />
+        </property>
+        <property name="display" type="long">
+            <column name="display" not-null="true" />
+        </property>
+        <property name="decimals" type="java.lang.Boolean">
+            <column name="decimals" />
+        </property>
+        <property name="hidden" type="long">
+            <column name="hidden" not-null="true" />
+        </property>
+        <property name="locked" type="long">
+            <column name="locked" not-null="true" />
+        </property>
+        <property name="locktime" type="long">
+            <column name="locktime" not-null="true" />
+        </property>
+        <property name="needsupdate" type="long">
+            <column name="needsupdate" not-null="true" />
+        </property>
+        <property name="timecreated" type="java.lang.Long">
+            <column name="timecreated" />
+        </property>
+        <property name="timemodified" type="java.lang.Long">
+            <column name="timemodified" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlQuestionTruefalse" table="mdl_question_truefalse" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="question" type="long">
+            <column name="question" not-null="true" />
+        </property>
+        <property name="trueanswer" type="long">
+            <column name="trueanswer" not-null="true" />
+        </property>
+        <property name="falseanswer" type="long">
+            <column name="falseanswer" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

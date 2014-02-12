@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlQuestionMultichoice" table="mdl_question_multichoice" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="question" type="long">
+            <column name="question" not-null="true" />
+        </property>
+        <property name="layout" type="short">
+            <column name="layout" not-null="true" />
+        </property>
+        <property name="answers" type="string">
+            <column name="answers" not-null="true" />
+        </property>
+        <property name="single" type="short">
+            <column name="single" not-null="true" />
+        </property>
+        <property name="shuffleanswers" type="short">
+            <column name="shuffleanswers" not-null="true" />
+        </property>
+        <property name="correctfeedback" type="string">
+            <column name="correctfeedback" length="65535" not-null="true" />
+        </property>
+        <property name="partiallycorrectfeedback" type="string">
+            <column name="partiallycorrectfeedback" length="65535" not-null="true" />
+        </property>
+        <property name="incorrectfeedback" type="string">
+            <column name="incorrectfeedback" length="65535" not-null="true" />
+        </property>
+        <property name="answernumbering" type="string">
+            <column name="answernumbering" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

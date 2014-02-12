@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlTimezone" table="mdl_timezone" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="100" not-null="true" />
+        </property>
+        <property name="year" type="long">
+            <column name="year" not-null="true" />
+        </property>
+        <property name="tzrule" type="string">
+            <column name="tzrule" length="20" not-null="true" />
+        </property>
+        <property name="gmtoff" type="long">
+            <column name="gmtoff" not-null="true" />
+        </property>
+        <property name="dstoff" type="long">
+            <column name="dstoff" not-null="true" />
+        </property>
+        <property name="dstMonth" type="byte">
+            <column name="dst_month" not-null="true" />
+        </property>
+        <property name="dstStartday" type="short">
+            <column name="dst_startday" not-null="true" />
+        </property>
+        <property name="dstWeekday" type="short">
+            <column name="dst_weekday" not-null="true" />
+        </property>
+        <property name="dstSkipweeks" type="short">
+            <column name="dst_skipweeks" not-null="true" />
+        </property>
+        <property name="dstTime" type="string">
+            <column name="dst_time" length="6" not-null="true" />
+        </property>
+        <property name="stdMonth" type="byte">
+            <column name="std_month" not-null="true" />
+        </property>
+        <property name="stdStartday" type="short">
+            <column name="std_startday" not-null="true" />
+        </property>
+        <property name="stdWeekday" type="short">
+            <column name="std_weekday" not-null="true" />
+        </property>
+        <property name="stdSkipweeks" type="short">
+            <column name="std_skipweeks" not-null="true" />
+        </property>
+        <property name="stdTime" type="string">
+            <column name="std_time" length="6" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

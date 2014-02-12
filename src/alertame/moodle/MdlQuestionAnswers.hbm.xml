@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlQuestionAnswers" table="mdl_question_answers" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="question" type="long">
+            <column name="question" not-null="true" />
+        </property>
+        <property name="answer" type="string">
+            <column name="answer" length="65535" not-null="true" />
+        </property>
+        <property name="fraction" type="double">
+            <column name="fraction" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="feedback" type="string">
+            <column name="feedback" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

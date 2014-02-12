@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlAssignment" table="mdl_assignment" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="course" type="long">
+            <column name="course" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="65535" not-null="true" />
+        </property>
+        <property name="format" type="short">
+            <column name="format" not-null="true" />
+        </property>
+        <property name="assignmenttype" type="string">
+            <column name="assignmenttype" length="50" not-null="true" />
+        </property>
+        <property name="resubmit" type="byte">
+            <column name="resubmit" not-null="true" />
+        </property>
+        <property name="preventlate" type="byte">
+            <column name="preventlate" not-null="true" />
+        </property>
+        <property name="emailteachers" type="byte">
+            <column name="emailteachers" not-null="true" />
+        </property>
+        <property name="var1" type="java.lang.Long">
+            <column name="var1" />
+        </property>
+        <property name="var2" type="java.lang.Long">
+            <column name="var2" />
+        </property>
+        <property name="var3" type="java.lang.Long">
+            <column name="var3" />
+        </property>
+        <property name="var4" type="java.lang.Long">
+            <column name="var4" />
+        </property>
+        <property name="var5" type="java.lang.Long">
+            <column name="var5" />
+        </property>
+        <property name="maxbytes" type="long">
+            <column name="maxbytes" not-null="true" />
+        </property>
+        <property name="timedue" type="long">
+            <column name="timedue" not-null="true" />
+        </property>
+        <property name="timeavailable" type="long">
+            <column name="timeavailable" not-null="true" />
+        </property>
+        <property name="grade" type="long">
+            <column name="grade" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

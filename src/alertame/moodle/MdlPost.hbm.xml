@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlPost" table="mdl_post" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="module" type="string">
+            <column name="module" length="20" not-null="true" />
+        </property>
+        <property name="userid" type="long">
+            <column name="userid" not-null="true" />
+        </property>
+        <property name="courseid" type="long">
+            <column name="courseid" not-null="true" />
+        </property>
+        <property name="groupid" type="long">
+            <column name="groupid" not-null="true" />
+        </property>
+        <property name="moduleid" type="long">
+            <column name="moduleid" not-null="true" />
+        </property>
+        <property name="coursemoduleid" type="long">
+            <column name="coursemoduleid" not-null="true" />
+        </property>
+        <property name="subject" type="string">
+            <column name="subject" length="128" not-null="true" />
+        </property>
+        <property name="summary" type="string">
+            <column name="summary" />
+        </property>
+        <property name="content" type="string">
+            <column name="content" />
+        </property>
+        <property name="uniquehash" type="string">
+            <column name="uniquehash" length="128" not-null="true" />
+        </property>
+        <property name="rating" type="long">
+            <column name="rating" not-null="true" />
+        </property>
+        <property name="format" type="long">
+            <column name="format" not-null="true" />
+        </property>
+        <property name="attachment" type="string">
+            <column name="attachment" length="100" />
+        </property>
+        <property name="publishstate" type="string">
+            <column name="publishstate" length="6" not-null="true" />
+        </property>
+        <property name="lastmodified" type="long">
+            <column name="lastmodified" not-null="true" />
+        </property>
+        <property name="created" type="long">
+            <column name="created" not-null="true" />
+        </property>
+        <property name="usermodified" type="java.lang.Long">
+            <column name="usermodified" />
+        </property>
+    </class>
+</hibernate-mapping>

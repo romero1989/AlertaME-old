@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlForumDiscussions" table="mdl_forum_discussions" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="course" type="long">
+            <column name="course" not-null="true" />
+        </property>
+        <property name="forum" type="long">
+            <column name="forum" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="firstpost" type="long">
+            <column name="firstpost" not-null="true" />
+        </property>
+        <property name="userid" type="long">
+            <column name="userid" not-null="true" />
+        </property>
+        <property name="groupid" type="long">
+            <column name="groupid" not-null="true" />
+        </property>
+        <property name="assessed" type="boolean">
+            <column name="assessed" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+        <property name="usermodified" type="long">
+            <column name="usermodified" not-null="true" />
+        </property>
+        <property name="timestart" type="long">
+            <column name="timestart" not-null="true" />
+        </property>
+        <property name="timeend" type="long">
+            <column name="timeend" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

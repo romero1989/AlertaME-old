@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlDataRecords" table="mdl_data_records" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="userid" type="long">
+            <column name="userid" not-null="true" />
+        </property>
+        <property name="groupid" type="long">
+            <column name="groupid" not-null="true" />
+        </property>
+        <property name="dataid" type="long">
+            <column name="dataid" not-null="true" />
+        </property>
+        <property name="timecreated" type="long">
+            <column name="timecreated" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+        <property name="approved" type="short">
+            <column name="approved" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

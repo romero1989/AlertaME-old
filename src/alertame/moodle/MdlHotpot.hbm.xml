@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlHotpot" table="mdl_hotpot" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="course" type="long">
+            <column name="course" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="summary" type="string">
+            <column name="summary" length="65535" not-null="true" />
+        </property>
+        <property name="timeopen" type="long">
+            <column name="timeopen" not-null="true" />
+        </property>
+        <property name="timeclose" type="long">
+            <column name="timeclose" not-null="true" />
+        </property>
+        <property name="location" type="short">
+            <column name="location" not-null="true" />
+        </property>
+        <property name="reference" type="string">
+            <column name="reference" not-null="true" />
+        </property>
+        <property name="outputformat" type="short">
+            <column name="outputformat" not-null="true" />
+        </property>
+        <property name="navigation" type="short">
+            <column name="navigation" not-null="true" />
+        </property>
+        <property name="studentfeedback" type="short">
+            <column name="studentfeedback" not-null="true" />
+        </property>
+        <property name="studentfeedbackurl" type="string">
+            <column name="studentfeedbackurl" not-null="true" />
+        </property>
+        <property name="forceplugins" type="short">
+            <column name="forceplugins" not-null="true" />
+        </property>
+        <property name="shownextquiz" type="short">
+            <column name="shownextquiz" not-null="true" />
+        </property>
+        <property name="review" type="short">
+            <column name="review" not-null="true" />
+        </property>
+        <property name="grade" type="long">
+            <column name="grade" not-null="true" />
+        </property>
+        <property name="grademethod" type="short">
+            <column name="grademethod" not-null="true" />
+        </property>
+        <property name="attempts" type="int">
+            <column name="attempts" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" not-null="true" />
+        </property>
+        <property name="subnet" type="string">
+            <column name="subnet" not-null="true" />
+        </property>
+        <property name="clickreporting" type="short">
+            <column name="clickreporting" not-null="true" />
+        </property>
+        <property name="timecreated" type="long">
+            <column name="timecreated" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

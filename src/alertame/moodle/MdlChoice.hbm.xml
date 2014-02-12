@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlChoice" table="mdl_choice" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="course" type="long">
+            <column name="course" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="text" type="string">
+            <column name="text" length="65535" not-null="true" />
+        </property>
+        <property name="format" type="byte">
+            <column name="format" not-null="true" />
+        </property>
+        <property name="publish" type="byte">
+            <column name="publish" not-null="true" />
+        </property>
+        <property name="showresults" type="byte">
+            <column name="showresults" not-null="true" />
+        </property>
+        <property name="display" type="short">
+            <column name="display" not-null="true" />
+        </property>
+        <property name="allowupdate" type="byte">
+            <column name="allowupdate" not-null="true" />
+        </property>
+        <property name="showunanswered" type="byte">
+            <column name="showunanswered" not-null="true" />
+        </property>
+        <property name="limitanswers" type="byte">
+            <column name="limitanswers" not-null="true" />
+        </property>
+        <property name="timeopen" type="long">
+            <column name="timeopen" not-null="true" />
+        </property>
+        <property name="timeclose" type="long">
+            <column name="timeclose" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

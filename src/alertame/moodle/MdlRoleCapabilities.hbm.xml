@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlRoleCapabilities" table="mdl_role_capabilities" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="contextid" type="long">
+            <column name="contextid" not-null="true" />
+        </property>
+        <property name="roleid" type="long">
+            <column name="roleid" not-null="true" />
+        </property>
+        <property name="capability" type="string">
+            <column name="capability" not-null="true" />
+        </property>
+        <property name="permission" type="long">
+            <column name="permission" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+        <property name="modifierid" type="long">
+            <column name="modifierid" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

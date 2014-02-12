@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlData" table="mdl_data" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="course" type="long">
+            <column name="course" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="intro" type="string">
+            <column name="intro" length="65535" not-null="true" />
+        </property>
+        <property name="comments" type="short">
+            <column name="comments" not-null="true" />
+        </property>
+        <property name="timeavailablefrom" type="long">
+            <column name="timeavailablefrom" not-null="true" />
+        </property>
+        <property name="timeavailableto" type="long">
+            <column name="timeavailableto" not-null="true" />
+        </property>
+        <property name="timeviewfrom" type="long">
+            <column name="timeviewfrom" not-null="true" />
+        </property>
+        <property name="timeviewto" type="long">
+            <column name="timeviewto" not-null="true" />
+        </property>
+        <property name="requiredentries" type="int">
+            <column name="requiredentries" not-null="true" />
+        </property>
+        <property name="requiredentriestoview" type="int">
+            <column name="requiredentriestoview" not-null="true" />
+        </property>
+        <property name="maxentries" type="int">
+            <column name="maxentries" not-null="true" />
+        </property>
+        <property name="rssarticles" type="short">
+            <column name="rssarticles" not-null="true" />
+        </property>
+        <property name="singletemplate" type="string">
+            <column name="singletemplate" length="65535" />
+        </property>
+        <property name="listtemplate" type="string">
+            <column name="listtemplate" length="65535" />
+        </property>
+        <property name="listtemplateheader" type="string">
+            <column name="listtemplateheader" length="65535" />
+        </property>
+        <property name="listtemplatefooter" type="string">
+            <column name="listtemplatefooter" length="65535" />
+        </property>
+        <property name="addtemplate" type="string">
+            <column name="addtemplate" length="65535" />
+        </property>
+        <property name="rsstemplate" type="string">
+            <column name="rsstemplate" length="65535" />
+        </property>
+        <property name="rsstitletemplate" type="string">
+            <column name="rsstitletemplate" length="65535" />
+        </property>
+        <property name="csstemplate" type="string">
+            <column name="csstemplate" length="65535" />
+        </property>
+        <property name="jstemplate" type="string">
+            <column name="jstemplate" length="65535" />
+        </property>
+        <property name="asearchtemplate" type="string">
+            <column name="asearchtemplate" length="65535" />
+        </property>
+        <property name="approval" type="short">
+            <column name="approval" not-null="true" />
+        </property>
+        <property name="scale" type="long">
+            <column name="scale" not-null="true" />
+        </property>
+        <property name="assessed" type="long">
+            <column name="assessed" not-null="true" />
+        </property>
+        <property name="defaultsort" type="long">
+            <column name="defaultsort" not-null="true" />
+        </property>
+        <property name="defaultsortdir" type="short">
+            <column name="defaultsortdir" not-null="true" />
+        </property>
+        <property name="editany" type="short">
+            <column name="editany" not-null="true" />
+        </property>
+        <property name="notification" type="long">
+            <column name="notification" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlAlertameAtividades" table="mdl_alertame_atividades" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="nome" type="string">
+            <column name="nome" not-null="true" />
+        </property>
+        <property name="curso" type="long">
+            <column name="curso" not-null="true" />
+        </property>
+        <property name="instancia" type="long">
+            <column name="instancia" not-null="true" />
+        </property>
+        <property name="modulo" type="long">
+            <column name="modulo" not-null="true" />
+        </property>
+        <property name="tipo" type="string">
+            <column name="tipo" length="45" />
+        </property>
+        <property name="criacao" type="java.lang.Long">
+            <column name="criacao" />
+        </property>
+        <property name="edicao" type="java.lang.Long">
+            <column name="edicao" />
+        </property>
+        <!-- <property name="inicio" type="long">
+           <column name="inicio" />
+        </property> -->
+        <property name="encerramento" type="java.lang.Long">
+            <column name="encerramento" />
+        </property>
+        <property name="cmid" type="java.lang.Long">
+            <column name="cmid" />
+        </property>
+        <property name="logid" type="java.lang.Long">
+            <column name="logid" />
+        </property>
+        <property name="versao" type="java.lang.Long">
+            <column name="versao" />
+        </property>
+        <property name="visivel" type="boolean">
+            <column name="visivel" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

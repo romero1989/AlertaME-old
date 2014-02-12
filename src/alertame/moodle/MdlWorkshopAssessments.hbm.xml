@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlWorkshopAssessments" table="mdl_workshop_assessments" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="workshopid" type="long">
+            <column name="workshopid" not-null="true" />
+        </property>
+        <property name="submissionid" type="long">
+            <column name="submissionid" not-null="true" />
+        </property>
+        <property name="userid" type="long">
+            <column name="userid" not-null="true" />
+        </property>
+        <property name="timecreated" type="long">
+            <column name="timecreated" not-null="true" />
+        </property>
+        <property name="timegraded" type="long">
+            <column name="timegraded" not-null="true" />
+        </property>
+        <property name="timeagreed" type="long">
+            <column name="timeagreed" not-null="true" />
+        </property>
+        <property name="grade" type="double">
+            <column name="grade" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="gradinggrade" type="short">
+            <column name="gradinggrade" not-null="true" />
+        </property>
+        <property name="teachergraded" type="short">
+            <column name="teachergraded" not-null="true" />
+        </property>
+        <property name="mailed" type="short">
+            <column name="mailed" not-null="true" />
+        </property>
+        <property name="resubmission" type="short">
+            <column name="resubmission" not-null="true" />
+        </property>
+        <property name="donotuse" type="short">
+            <column name="donotuse" not-null="true" />
+        </property>
+        <property name="generalcomment" type="string">
+            <column name="generalcomment" length="65535" />
+        </property>
+        <property name="teachercomment" type="string">
+            <column name="teachercomment" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

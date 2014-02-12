@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlWikiLocks" table="mdl_wiki_locks" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="wikiid" type="long">
+            <column name="wikiid" not-null="true" />
+        </property>
+        <property name="pagename" type="string">
+            <column name="pagename" length="160" not-null="true" />
+        </property>
+        <property name="lockedby" type="long">
+            <column name="lockedby" not-null="true" />
+        </property>
+        <property name="lockedsince" type="long">
+            <column name="lockedsince" not-null="true" />
+        </property>
+        <property name="lockedseen" type="long">
+            <column name="lockedseen" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

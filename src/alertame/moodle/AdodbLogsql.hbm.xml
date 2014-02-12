@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.AdodbLogsql" table="adodb_logsql" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="created" type="timestamp">
+            <column name="created" length="19" not-null="true" />
+        </property>
+        <property name="sql0" type="string">
+            <column name="sql0" length="250" not-null="true" />
+        </property>
+        <property name="sql1" type="string">
+            <column name="sql1" length="65535" />
+        </property>
+        <property name="params" type="string">
+            <column name="params" length="65535" />
+        </property>
+        <property name="tracer" type="string">
+            <column name="tracer" length="65535" />
+        </property>
+        <property name="timer" type="big_decimal">
+            <column name="timer" precision="16" scale="6" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlScormSeqRulecond" table="mdl_scorm_seq_rulecond" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="scoid" type="long">
+            <column name="scoid" not-null="true" />
+        </property>
+        <property name="ruleconditionsid" type="long">
+            <column name="ruleconditionsid" not-null="true" />
+        </property>
+        <property name="refrencedobjective" type="string">
+            <column name="refrencedobjective" not-null="true" />
+        </property>
+        <property name="measurethreshold" type="float">
+            <column name="measurethreshold" precision="11" scale="4" not-null="true" />
+        </property>
+        <property name="operator" type="string">
+            <column name="operator" length="5" not-null="true" />
+        </property>
+        <property name="cond" type="string">
+            <column name="cond" length="30" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

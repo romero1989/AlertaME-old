@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlWorkshop" table="mdl_workshop" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="course" type="long">
+            <column name="course" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="65535" not-null="true" />
+        </property>
+        <property name="wtype" type="short">
+            <column name="wtype" not-null="true" />
+        </property>
+        <property name="nelements" type="short">
+            <column name="nelements" not-null="true" />
+        </property>
+        <property name="nattachments" type="short">
+            <column name="nattachments" not-null="true" />
+        </property>
+        <property name="phase" type="byte">
+            <column name="phase" not-null="true" />
+        </property>
+        <property name="format" type="byte">
+            <column name="format" not-null="true" />
+        </property>
+        <property name="gradingstrategy" type="byte">
+            <column name="gradingstrategy" not-null="true" />
+        </property>
+        <property name="resubmit" type="byte">
+            <column name="resubmit" not-null="true" />
+        </property>
+        <property name="agreeassessments" type="byte">
+            <column name="agreeassessments" not-null="true" />
+        </property>
+        <property name="hidegrades" type="byte">
+            <column name="hidegrades" not-null="true" />
+        </property>
+        <property name="anonymous" type="byte">
+            <column name="anonymous" not-null="true" />
+        </property>
+        <property name="includeself" type="byte">
+            <column name="includeself" not-null="true" />
+        </property>
+        <property name="maxbytes" type="long">
+            <column name="maxbytes" not-null="true" />
+        </property>
+        <property name="submissionstart" type="long">
+            <column name="submissionstart" not-null="true" />
+        </property>
+        <property name="assessmentstart" type="long">
+            <column name="assessmentstart" not-null="true" />
+        </property>
+        <property name="submissionend" type="long">
+            <column name="submissionend" not-null="true" />
+        </property>
+        <property name="assessmentend" type="long">
+            <column name="assessmentend" not-null="true" />
+        </property>
+        <property name="releasegrades" type="long">
+            <column name="releasegrades" not-null="true" />
+        </property>
+        <property name="grade" type="short">
+            <column name="grade" not-null="true" />
+        </property>
+        <property name="gradinggrade" type="short">
+            <column name="gradinggrade" not-null="true" />
+        </property>
+        <property name="ntassessments" type="short">
+            <column name="ntassessments" not-null="true" />
+        </property>
+        <property name="assessmentcomps" type="short">
+            <column name="assessmentcomps" not-null="true" />
+        </property>
+        <property name="nsassessments" type="short">
+            <column name="nsassessments" not-null="true" />
+        </property>
+        <property name="overallocation" type="short">
+            <column name="overallocation" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+        <property name="teacherweight" type="short">
+            <column name="teacherweight" not-null="true" />
+        </property>
+        <property name="showleaguetable" type="short">
+            <column name="showleaguetable" not-null="true" />
+        </property>
+        <property name="usepassword" type="short">
+            <column name="usepassword" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="32" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

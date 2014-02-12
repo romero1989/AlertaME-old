@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlChat" table="mdl_chat" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="course" type="long">
+            <column name="course" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="intro" type="string">
+            <column name="intro" length="65535" not-null="true" />
+        </property>
+        <property name="keepdays" type="long">
+            <column name="keepdays" not-null="true" />
+        </property>
+        <property name="studentlogs" type="short">
+            <column name="studentlogs" not-null="true" />
+        </property>
+        <property name="chattime" type="long">
+            <column name="chattime" not-null="true" />
+        </property>
+        <property name="schedule" type="short">
+            <column name="schedule" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

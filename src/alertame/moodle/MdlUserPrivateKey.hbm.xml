@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlUserPrivateKey" table="mdl_user_private_key" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="script" type="string">
+            <column name="script" length="128" not-null="true" />
+        </property>
+        <property name="value" type="string">
+            <column name="value" length="128" not-null="true" />
+        </property>
+        <property name="userid" type="long">
+            <column name="userid" not-null="true" />
+        </property>
+        <property name="instance" type="java.lang.Long">
+            <column name="instance" />
+        </property>
+        <property name="iprestriction" type="string">
+            <column name="iprestriction" />
+        </property>
+        <property name="validuntil" type="java.lang.Long">
+            <column name="validuntil" />
+        </property>
+        <property name="timecreated" type="java.lang.Long">
+            <column name="timecreated" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlChatUsers" table="mdl_chat_users" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="version" type="string">
+            <column name="version" length="16" not-null="true" />
+        </property>
+        <property name="chatid" type="long">
+            <column name="chatid" not-null="true" />
+        </property>
+        <property name="userid" type="long">
+            <column name="userid" not-null="true" />
+        </property>
+        <property name="groupid" type="long">
+            <column name="groupid" not-null="true" />
+        </property>
+        <property name="ip" type="string">
+            <column name="ip" length="15" not-null="true" />
+        </property>
+        <property name="firstping" type="long">
+            <column name="firstping" not-null="true" />
+        </property>
+        <property name="lastping" type="long">
+            <column name="lastping" not-null="true" />
+        </property>
+        <property name="lastmessageping" type="long">
+            <column name="lastmessageping" not-null="true" />
+        </property>
+        <property name="sid" type="string">
+            <column name="sid" length="32" not-null="true" />
+        </property>
+        <property name="course" type="long">
+            <column name="course" not-null="true" />
+        </property>
+        <property name="lang" type="string">
+            <column name="lang" length="30" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

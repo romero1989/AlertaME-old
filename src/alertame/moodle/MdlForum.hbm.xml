@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlForum" table="mdl_forum" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="course" type="long">
+            <column name="course" not-null="true" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="8" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="intro" type="string">
+            <column name="intro" length="65535" not-null="true" />
+        </property>
+        <property name="assessed" type="long">
+            <column name="assessed" not-null="true" />
+        </property>
+        <property name="assesstimestart" type="long">
+            <column name="assesstimestart" not-null="true" />
+        </property>
+        <property name="assesstimefinish" type="long">
+            <column name="assesstimefinish" not-null="true" />
+        </property>
+        <property name="scale" type="long">
+            <column name="scale" not-null="true" />
+        </property>
+        <property name="maxbytes" type="long">
+            <column name="maxbytes" not-null="true" />
+        </property>
+        <property name="forcesubscribe" type="boolean">
+            <column name="forcesubscribe" not-null="true" />
+        </property>
+        <property name="trackingtype" type="byte">
+            <column name="trackingtype" not-null="true" />
+        </property>
+        <property name="rsstype" type="byte">
+            <column name="rsstype" not-null="true" />
+        </property>
+        <property name="rssarticles" type="byte">
+            <column name="rssarticles" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+        <property name="warnafter" type="long">
+            <column name="warnafter" not-null="true" />
+        </property>
+        <property name="blockafter" type="long">
+            <column name="blockafter" not-null="true" />
+        </property>
+        <property name="blockperiod" type="long">
+            <column name="blockperiod" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

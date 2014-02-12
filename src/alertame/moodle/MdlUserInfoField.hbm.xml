@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlUserInfoField" table="mdl_user_info_field" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="shortname" type="string">
+            <column name="shortname" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="datatype" type="string">
+            <column name="datatype" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" />
+        </property>
+        <property name="categoryid" type="long">
+            <column name="categoryid" not-null="true" />
+        </property>
+        <property name="sortorder" type="long">
+            <column name="sortorder" not-null="true" />
+        </property>
+        <property name="required" type="byte">
+            <column name="required" not-null="true" />
+        </property>
+        <property name="locked" type="byte">
+            <column name="locked" not-null="true" />
+        </property>
+        <property name="visible" type="short">
+            <column name="visible" not-null="true" />
+        </property>
+        <property name="forceunique" type="byte">
+            <column name="forceunique" not-null="true" />
+        </property>
+        <property name="signup" type="byte">
+            <column name="signup" not-null="true" />
+        </property>
+        <property name="defaultdata" type="string">
+            <column name="defaultdata" />
+        </property>
+        <property name="param1" type="string">
+            <column name="param1" />
+        </property>
+        <property name="param2" type="string">
+            <column name="param2" />
+        </property>
+        <property name="param3" type="string">
+            <column name="param3" />
+        </property>
+        <property name="param4" type="string">
+            <column name="param4" />
+        </property>
+        <property name="param5" type="string">
+            <column name="param5" />
+        </property>
+    </class>
+</hibernate-mapping>

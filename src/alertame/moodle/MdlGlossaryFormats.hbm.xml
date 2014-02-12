@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlGlossaryFormats" table="mdl_glossary_formats" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="popupformatname" type="string">
+            <column name="popupformatname" length="50" not-null="true" />
+        </property>
+        <property name="visible" type="byte">
+            <column name="visible" not-null="true" />
+        </property>
+        <property name="showgroup" type="byte">
+            <column name="showgroup" not-null="true" />
+        </property>
+        <property name="defaultmode" type="string">
+            <column name="defaultmode" length="50" not-null="true" />
+        </property>
+        <property name="defaulthook" type="string">
+            <column name="defaulthook" length="50" not-null="true" />
+        </property>
+        <property name="sortkey" type="string">
+            <column name="sortkey" length="50" not-null="true" />
+        </property>
+        <property name="sortorder" type="string">
+            <column name="sortorder" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

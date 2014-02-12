@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlCourseCategories" table="mdl_course_categories" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="65535" />
+        </property>
+        <property name="parent" type="long">
+            <column name="parent" not-null="true" />
+        </property>
+        <property name="sortorder" type="long">
+            <column name="sortorder" not-null="true" />
+        </property>
+        <property name="coursecount" type="long">
+            <column name="coursecount" not-null="true" />
+        </property>
+        <property name="visible" type="boolean">
+            <column name="visible" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+        <property name="depth" type="long">
+            <column name="depth" not-null="true" />
+        </property>
+        <property name="path" type="string">
+            <column name="path" not-null="true" />
+        </property>
+        <property name="theme" type="string">
+            <column name="theme" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

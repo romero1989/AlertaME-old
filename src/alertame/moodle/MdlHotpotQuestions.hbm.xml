@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlHotpotQuestions" table="mdl_hotpot_questions" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="65535" not-null="true" />
+        </property>
+        <property name="type" type="short">
+            <column name="type" not-null="true" />
+        </property>
+        <property name="text" type="long">
+            <column name="text" not-null="true" />
+        </property>
+        <property name="hotpot" type="long">
+            <column name="hotpot" not-null="true" />
+        </property>
+        <property name="md5key" type="string">
+            <column name="md5key" length="32" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlLessonPages" table="mdl_lesson_pages" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="lessonid" type="long">
+            <column name="lessonid" not-null="true" />
+        </property>
+        <property name="prevpageid" type="long">
+            <column name="prevpageid" not-null="true" />
+        </property>
+        <property name="nextpageid" type="long">
+            <column name="nextpageid" not-null="true" />
+        </property>
+        <property name="qtype" type="short">
+            <column name="qtype" not-null="true" />
+        </property>
+        <property name="qoption" type="short">
+            <column name="qoption" not-null="true" />
+        </property>
+        <property name="layout" type="short">
+            <column name="layout" not-null="true" />
+        </property>
+        <property name="display" type="short">
+            <column name="display" not-null="true" />
+        </property>
+        <property name="timecreated" type="long">
+            <column name="timecreated" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" not-null="true" />
+        </property>
+        <property name="contents" type="string">
+            <column name="contents" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

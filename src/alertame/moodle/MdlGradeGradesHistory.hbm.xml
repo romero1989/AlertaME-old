@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlGradeGradesHistory" table="mdl_grade_grades_history" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="action" type="long">
+            <column name="action" not-null="true" />
+        </property>
+        <property name="oldid" type="long">
+            <column name="oldid" not-null="true" />
+        </property>
+        <property name="source" type="string">
+            <column name="source" />
+        </property>
+        <property name="timemodified" type="java.lang.Long">
+            <column name="timemodified" />
+        </property>
+        <property name="loggeduser" type="java.lang.Long">
+            <column name="loggeduser" />
+        </property>
+        <property name="itemid" type="long">
+            <column name="itemid" not-null="true" />
+        </property>
+        <property name="userid" type="long">
+            <column name="userid" not-null="true" />
+        </property>
+        <property name="rawgrade" type="big_decimal">
+            <column name="rawgrade" precision="10" scale="5" />
+        </property>
+        <property name="rawgrademax" type="big_decimal">
+            <column name="rawgrademax" precision="10" scale="5" not-null="true" />
+        </property>
+        <property name="rawgrademin" type="big_decimal">
+            <column name="rawgrademin" precision="10" scale="5" not-null="true" />
+        </property>
+        <property name="rawscaleid" type="java.lang.Long">
+            <column name="rawscaleid" />
+        </property>
+        <property name="usermodified" type="java.lang.Long">
+            <column name="usermodified" />
+        </property>
+        <property name="finalgrade" type="big_decimal">
+            <column name="finalgrade" precision="10" scale="5" />
+        </property>
+        <property name="hidden" type="long">
+            <column name="hidden" not-null="true" />
+        </property>
+        <property name="locked" type="long">
+            <column name="locked" not-null="true" />
+        </property>
+        <property name="locktime" type="long">
+            <column name="locktime" not-null="true" />
+        </property>
+        <property name="exported" type="long">
+            <column name="exported" not-null="true" />
+        </property>
+        <property name="overridden" type="long">
+            <column name="overridden" not-null="true" />
+        </property>
+        <property name="excluded" type="long">
+            <column name="excluded" not-null="true" />
+        </property>
+        <property name="feedback" type="string">
+            <column name="feedback" length="16777215" />
+        </property>
+        <property name="feedbackformat" type="long">
+            <column name="feedbackformat" not-null="true" />
+        </property>
+        <property name="information" type="string">
+            <column name="information" length="16777215" />
+        </property>
+        <property name="informationformat" type="long">
+            <column name="informationformat" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

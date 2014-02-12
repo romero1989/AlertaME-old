@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlGradeImportValues" table="mdl_grade_import_values" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="itemid" type="java.lang.Long">
+            <column name="itemid" />
+        </property>
+        <property name="newgradeitem" type="java.lang.Long">
+            <column name="newgradeitem" />
+        </property>
+        <property name="userid" type="long">
+            <column name="userid" not-null="true" />
+        </property>
+        <property name="finalgrade" type="big_decimal">
+            <column name="finalgrade" precision="10" scale="5" />
+        </property>
+        <property name="feedback" type="string">
+            <column name="feedback" length="16777215" />
+        </property>
+        <property name="importcode" type="long">
+            <column name="importcode" not-null="true" />
+        </property>
+        <property name="importer" type="java.lang.Long">
+            <column name="importer" />
+        </property>
+    </class>
+</hibernate-mapping>

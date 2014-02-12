@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlUser" table="mdl_user" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="auth" type="string">
+            <column name="auth" length="20" not-null="true" />
+        </property>
+        <property name="confirmed" type="boolean">
+            <column name="confirmed" not-null="true" />
+        </property>
+        <property name="policyagreed" type="boolean">
+            <column name="policyagreed" not-null="true" />
+        </property>
+        <property name="deleted" type="boolean">
+            <column name="deleted" not-null="true" />
+        </property>
+        <property name="mnethostid" type="long">
+            <column name="mnethostid" not-null="true" />
+        </property>
+        <property name="username" type="string">
+            <column name="username" length="100" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="32" not-null="true" />
+        </property>
+        <property name="idnumber" type="string">
+            <column name="idnumber" not-null="true" />
+        </property>
+        <property name="firstname" type="string">
+            <column name="firstname" length="100" not-null="true" />
+        </property>
+        <property name="lastname" type="string">
+            <column name="lastname" length="100" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" not-null="true" />
+        </property>
+        <property name="emailstop" type="boolean">
+            <column name="emailstop" not-null="true" />
+        </property>
+        <property name="icq" type="string">
+            <column name="icq" length="15" not-null="true" />
+        </property>
+        <property name="skype" type="string">
+            <column name="skype" length="50" not-null="true" />
+        </property>
+        <property name="yahoo" type="string">
+            <column name="yahoo" length="50" not-null="true" />
+        </property>
+        <property name="aim" type="string">
+            <column name="aim" length="50" not-null="true" />
+        </property>
+        <property name="msn" type="string">
+            <column name="msn" length="50" not-null="true" />
+        </property>
+        <property name="phone1" type="string">
+            <column name="phone1" length="20" not-null="true" />
+        </property>
+        <property name="phone2" type="string">
+            <column name="phone2" length="20" not-null="true" />
+        </property>
+        <property name="institution" type="string">
+            <column name="institution" length="40" not-null="true" />
+        </property>
+        <property name="department" type="string">
+            <column name="department" length="30" not-null="true" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="70" not-null="true" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="20" not-null="true" />
+        </property>
+        <property name="country" type="string">
+            <column name="country" length="2" not-null="true" />
+        </property>
+        <property name="lang" type="string">
+            <column name="lang" length="30" not-null="true" />
+        </property>
+        <property name="theme" type="string">
+            <column name="theme" length="50" not-null="true" />
+        </property>
+        <property name="timezone" type="string">
+            <column name="timezone" length="100" not-null="true" />
+        </property>
+        <property name="firstaccess" type="long">
+            <column name="firstaccess" not-null="true" />
+        </property>
+        <property name="lastaccess" type="long">
+            <column name="lastaccess" not-null="true" />
+        </property>
+        <property name="lastlogin" type="long">
+            <column name="lastlogin" not-null="true" />
+        </property>
+        <property name="currentlogin" type="long">
+            <column name="currentlogin" not-null="true" />
+        </property>
+        <property name="lastip" type="string">
+            <column name="lastip" length="15" not-null="true" />
+        </property>
+        <property name="secret" type="string">
+            <column name="secret" length="15" not-null="true" />
+        </property>
+        <property name="picture" type="boolean">
+            <column name="picture" not-null="true" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="65535" />
+        </property>
+        <property name="mailformat" type="boolean">
+            <column name="mailformat" not-null="true" />
+        </property>
+        <property name="maildigest" type="boolean">
+            <column name="maildigest" not-null="true" />
+        </property>
+        <property name="maildisplay" type="byte">
+            <column name="maildisplay" not-null="true" />
+        </property>
+        <property name="htmleditor" type="boolean">
+            <column name="htmleditor" not-null="true" />
+        </property>
+        <property name="ajax" type="boolean">
+            <column name="ajax" not-null="true" />
+        </property>
+        <property name="autosubscribe" type="boolean">
+            <column name="autosubscribe" not-null="true" />
+        </property>
+        <property name="trackforums" type="boolean">
+            <column name="trackforums" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+        <property name="trustbitmask" type="long">
+            <column name="trustbitmask" not-null="true" />
+        </property>
+        <property name="imagealt" type="string">
+            <column name="imagealt" />
+        </property>
+        <property name="screenreader" type="boolean">
+            <column name="screenreader" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

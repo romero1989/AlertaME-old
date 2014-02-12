@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlJournalEntries" table="mdl_journal_entries" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="journal" type="long">
+            <column name="journal" not-null="true" />
+        </property>
+        <property name="userid" type="long">
+            <column name="userid" not-null="true" />
+        </property>
+        <property name="modified" type="long">
+            <column name="modified" not-null="true" />
+        </property>
+        <property name="text" type="string">
+            <column name="text" length="65535" not-null="true" />
+        </property>
+        <property name="format" type="byte">
+            <column name="format" not-null="true" />
+        </property>
+        <property name="rating" type="java.lang.Long">
+            <column name="rating" />
+        </property>
+        <property name="entrycomment" type="string">
+            <column name="entrycomment" length="65535" />
+        </property>
+        <property name="teacher" type="long">
+            <column name="teacher" not-null="true" />
+        </property>
+        <property name="timemarked" type="long">
+            <column name="timemarked" not-null="true" />
+        </property>
+        <property name="mailed" type="boolean">
+            <column name="mailed" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

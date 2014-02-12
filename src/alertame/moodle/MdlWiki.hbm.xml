@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlWiki" table="mdl_wiki" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="course" type="long">
+            <column name="course" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="summary" type="string">
+            <column name="summary" length="65535" not-null="true" />
+        </property>
+        <property name="pagename" type="string">
+            <column name="pagename" not-null="true" />
+        </property>
+        <property name="wtype" type="string">
+            <column name="wtype" length="8" not-null="true" />
+        </property>
+        <property name="ewikiprinttitle" type="short">
+            <column name="ewikiprinttitle" not-null="true" />
+        </property>
+        <property name="htmlmode" type="short">
+            <column name="htmlmode" not-null="true" />
+        </property>
+        <property name="ewikiacceptbinary" type="short">
+            <column name="ewikiacceptbinary" not-null="true" />
+        </property>
+        <property name="disablecamelcase" type="short">
+            <column name="disablecamelcase" not-null="true" />
+        </property>
+        <property name="setpageflags" type="short">
+            <column name="setpageflags" not-null="true" />
+        </property>
+        <property name="strippages" type="short">
+            <column name="strippages" not-null="true" />
+        </property>
+        <property name="removepages" type="short">
+            <column name="removepages" not-null="true" />
+        </property>
+        <property name="revertchanges" type="short">
+            <column name="revertchanges" not-null="true" />
+        </property>
+        <property name="initialcontent" type="string">
+            <column name="initialcontent" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

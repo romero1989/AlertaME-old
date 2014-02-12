@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlScormScoes" table="mdl_scorm_scoes" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="scorm" type="long">
+            <column name="scorm" not-null="true" />
+        </property>
+        <property name="manifest" type="string">
+            <column name="manifest" not-null="true" />
+        </property>
+        <property name="organization" type="string">
+            <column name="organization" not-null="true" />
+        </property>
+        <property name="parent" type="string">
+            <column name="parent" not-null="true" />
+        </property>
+        <property name="identifier" type="string">
+            <column name="identifier" not-null="true" />
+        </property>
+        <property name="launch" type="string">
+            <column name="launch" not-null="true" />
+        </property>
+        <property name="scormtype" type="string">
+            <column name="scormtype" length="5" not-null="true" />
+        </property>
+        <property name="title" type="string">
+            <column name="title" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

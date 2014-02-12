@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlQuestionDatasetDefinitions" table="mdl_question_dataset_definitions" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="category" type="long">
+            <column name="category" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="type" type="long">
+            <column name="type" not-null="true" />
+        </property>
+        <property name="options" type="string">
+            <column name="options" not-null="true" />
+        </property>
+        <property name="itemcount" type="long">
+            <column name="itemcount" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

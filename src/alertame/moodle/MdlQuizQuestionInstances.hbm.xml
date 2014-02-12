@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlQuizQuestionInstances" table="mdl_quiz_question_instances" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="quiz" type="long">
+            <column name="quiz" not-null="true" />
+        </property>
+        <property name="question" type="long">
+            <column name="question" not-null="true" />
+        </property>
+        <property name="grade" type="int">
+            <column name="grade" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

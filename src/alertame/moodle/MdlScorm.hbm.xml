@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlScorm" table="mdl_scorm" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="version" type="string">
+            <column name="version" length="9" not-null="true" />
+        </property>
+        <property name="course" type="long">
+            <column name="course" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="reference" type="string">
+            <column name="reference" not-null="true" />
+        </property>
+        <property name="summary" type="string">
+            <column name="summary" length="65535" not-null="true" />
+        </property>
+        <property name="maxgrade" type="double">
+            <column name="maxgrade" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="grademethod" type="byte">
+            <column name="grademethod" not-null="true" />
+        </property>
+        <property name="whatgrade" type="long">
+            <column name="whatgrade" not-null="true" />
+        </property>
+        <property name="maxattempt" type="long">
+            <column name="maxattempt" not-null="true" />
+        </property>
+        <property name="updatefreq" type="boolean">
+            <column name="updatefreq" not-null="true" />
+        </property>
+        <property name="md5hash" type="string">
+            <column name="md5hash" length="32" not-null="true" />
+        </property>
+        <property name="launch" type="long">
+            <column name="launch" not-null="true" />
+        </property>
+        <property name="skipview" type="boolean">
+            <column name="skipview" not-null="true" />
+        </property>
+        <property name="hidebrowse" type="boolean">
+            <column name="hidebrowse" not-null="true" />
+        </property>
+        <property name="hidetoc" type="boolean">
+            <column name="hidetoc" not-null="true" />
+        </property>
+        <property name="hidenav" type="boolean">
+            <column name="hidenav" not-null="true" />
+        </property>
+        <property name="auto" type="boolean">
+            <column name="auto" not-null="true" />
+        </property>
+        <property name="popup" type="boolean">
+            <column name="popup" not-null="true" />
+        </property>
+        <property name="options" type="string">
+            <column name="options" not-null="true" />
+        </property>
+        <property name="width" type="long">
+            <column name="width" not-null="true" />
+        </property>
+        <property name="height" type="long">
+            <column name="height" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

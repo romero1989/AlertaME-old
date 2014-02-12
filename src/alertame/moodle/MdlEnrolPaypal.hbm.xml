@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlEnrolPaypal" table="mdl_enrol_paypal" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="business" type="string">
+            <column name="business" not-null="true" />
+        </property>
+        <property name="receiverEmail" type="string">
+            <column name="receiver_email" not-null="true" />
+        </property>
+        <property name="receiverId" type="string">
+            <column name="receiver_id" not-null="true" />
+        </property>
+        <property name="itemName" type="string">
+            <column name="item_name" not-null="true" />
+        </property>
+        <property name="courseid" type="long">
+            <column name="courseid" not-null="true" />
+        </property>
+        <property name="userid" type="long">
+            <column name="userid" not-null="true" />
+        </property>
+        <property name="memo" type="string">
+            <column name="memo" not-null="true" />
+        </property>
+        <property name="tax" type="string">
+            <column name="tax" not-null="true" />
+        </property>
+        <property name="optionName1" type="string">
+            <column name="option_name1" not-null="true" />
+        </property>
+        <property name="optionSelection1X" type="string">
+            <column name="option_selection1_x" not-null="true" />
+        </property>
+        <property name="optionName2" type="string">
+            <column name="option_name2" not-null="true" />
+        </property>
+        <property name="optionSelection2X" type="string">
+            <column name="option_selection2_x" not-null="true" />
+        </property>
+        <property name="paymentStatus" type="string">
+            <column name="payment_status" not-null="true" />
+        </property>
+        <property name="pendingReason" type="string">
+            <column name="pending_reason" not-null="true" />
+        </property>
+        <property name="reasonCode" type="string">
+            <column name="reason_code" length="30" not-null="true" />
+        </property>
+        <property name="txnId" type="string">
+            <column name="txn_id" not-null="true" />
+        </property>
+        <property name="parentTxnId" type="string">
+            <column name="parent_txn_id" not-null="true" />
+        </property>
+        <property name="paymentType" type="string">
+            <column name="payment_type" length="30" not-null="true" />
+        </property>
+        <property name="timeupdated" type="long">
+            <column name="timeupdated" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlEvent" table="mdl_event" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="65535" not-null="true" />
+        </property>
+        <property name="format" type="short">
+            <column name="format" not-null="true" />
+        </property>
+        <property name="courseid" type="long">
+            <column name="courseid" not-null="true" />
+        </property>
+        <property name="groupid" type="long">
+            <column name="groupid" not-null="true" />
+        </property>
+        <property name="userid" type="long">
+            <column name="userid" not-null="true" />
+        </property>
+        <property name="repeatid" type="long">
+            <column name="repeatid" not-null="true" />
+        </property>
+        <property name="modulename" type="string">
+            <column name="modulename" length="20" not-null="true" />
+        </property>
+        <property name="instance" type="long">
+            <column name="instance" not-null="true" />
+        </property>
+        <property name="eventtype" type="string">
+            <column name="eventtype" length="20" not-null="true" />
+        </property>
+        <property name="timestart" type="long">
+            <column name="timestart" not-null="true" />
+        </property>
+        <property name="timeduration" type="long">
+            <column name="timeduration" not-null="true" />
+        </property>
+        <property name="visible" type="short">
+            <column name="visible" not-null="true" />
+        </property>
+        <property name="uuid" type="string">
+            <column name="uuid" length="36" not-null="true" />
+        </property>
+        <property name="sequence" type="long">
+            <column name="sequence" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

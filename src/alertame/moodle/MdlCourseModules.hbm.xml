@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlCourseModules" table="mdl_course_modules" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="course" type="long">
+            <column name="course" not-null="true" />
+        </property>
+        <property name="module" type="long">
+            <column name="module" not-null="true" />
+        </property>
+        <property name="instance" type="long">
+            <column name="instance" not-null="true" />
+        </property>
+        <property name="section" type="long">
+            <column name="section" not-null="true" />
+        </property>
+        <property name="idnumber" type="string">
+            <column name="idnumber" length="100" />
+        </property>
+        <property name="added" type="long">
+            <column name="added" not-null="true" />
+        </property>
+        <property name="score" type="short">
+            <column name="score" not-null="true" />
+        </property>
+        <property name="indent" type="int">
+            <column name="indent" not-null="true" />
+        </property>
+        <property name="visible" type="boolean">
+            <column name="visible" not-null="true" />
+        </property>
+        <property name="visibleold" type="boolean">
+            <column name="visibleold" not-null="true" />
+        </property>
+        <property name="groupmode" type="short">
+            <column name="groupmode" not-null="true" />
+        </property>
+        <property name="groupingid" type="long">
+            <column name="groupingid" not-null="true" />
+        </property>
+        <property name="groupmembersonly" type="short">
+            <column name="groupmembersonly" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

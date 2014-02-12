@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlLesson" table="mdl_lesson" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="course" type="long">
+            <column name="course" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="practice" type="short">
+            <column name="practice" not-null="true" />
+        </property>
+        <property name="modattempts" type="short">
+            <column name="modattempts" not-null="true" />
+        </property>
+        <property name="usepassword" type="short">
+            <column name="usepassword" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="32" not-null="true" />
+        </property>
+        <property name="dependency" type="long">
+            <column name="dependency" not-null="true" />
+        </property>
+        <property name="conditions" type="string">
+            <column name="conditions" length="65535" not-null="true" />
+        </property>
+        <property name="grade" type="short">
+            <column name="grade" not-null="true" />
+        </property>
+        <property name="custom" type="short">
+            <column name="custom" not-null="true" />
+        </property>
+        <property name="ongoing" type="short">
+            <column name="ongoing" not-null="true" />
+        </property>
+        <property name="usemaxgrade" type="short">
+            <column name="usemaxgrade" not-null="true" />
+        </property>
+        <property name="maxanswers" type="short">
+            <column name="maxanswers" not-null="true" />
+        </property>
+        <property name="maxattempts" type="short">
+            <column name="maxattempts" not-null="true" />
+        </property>
+        <property name="review" type="short">
+            <column name="review" not-null="true" />
+        </property>
+        <property name="nextpagedefault" type="short">
+            <column name="nextpagedefault" not-null="true" />
+        </property>
+        <property name="feedback" type="short">
+            <column name="feedback" not-null="true" />
+        </property>
+        <property name="minquestions" type="short">
+            <column name="minquestions" not-null="true" />
+        </property>
+        <property name="maxpages" type="short">
+            <column name="maxpages" not-null="true" />
+        </property>
+        <property name="timed" type="short">
+            <column name="timed" not-null="true" />
+        </property>
+        <property name="maxtime" type="long">
+            <column name="maxtime" not-null="true" />
+        </property>
+        <property name="retake" type="short">
+            <column name="retake" not-null="true" />
+        </property>
+        <property name="activitylink" type="long">
+            <column name="activitylink" not-null="true" />
+        </property>
+        <property name="mediafile" type="string">
+            <column name="mediafile" not-null="true" />
+        </property>
+        <property name="mediaheight" type="long">
+            <column name="mediaheight" not-null="true" />
+        </property>
+        <property name="mediawidth" type="long">
+            <column name="mediawidth" not-null="true" />
+        </property>
+        <property name="mediaclose" type="short">
+            <column name="mediaclose" not-null="true" />
+        </property>
+        <property name="slideshow" type="short">
+            <column name="slideshow" not-null="true" />
+        </property>
+        <property name="width" type="long">
+            <column name="width" not-null="true" />
+        </property>
+        <property name="height" type="long">
+            <column name="height" not-null="true" />
+        </property>
+        <property name="bgcolor" type="string">
+            <column name="bgcolor" length="7" not-null="true" />
+        </property>
+        <property name="displayleft" type="short">
+            <column name="displayleft" not-null="true" />
+        </property>
+        <property name="displayleftif" type="short">
+            <column name="displayleftif" not-null="true" />
+        </property>
+        <property name="progressbar" type="short">
+            <column name="progressbar" not-null="true" />
+        </property>
+        <property name="highscores" type="short">
+            <column name="highscores" not-null="true" />
+        </property>
+        <property name="maxhighscores" type="long">
+            <column name="maxhighscores" not-null="true" />
+        </property>
+        <property name="available" type="long">
+            <column name="available" not-null="true" />
+        </property>
+        <property name="deadline" type="long">
+            <column name="deadline" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

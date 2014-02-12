@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlMnetEnrolCourse" table="mdl_mnet_enrol_course" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="hostid" type="long">
+            <column name="hostid" not-null="true" />
+        </property>
+        <property name="remoteid" type="long">
+            <column name="remoteid" not-null="true" />
+        </property>
+        <property name="catId" type="long">
+            <column name="cat_id" not-null="true" />
+        </property>
+        <property name="catName" type="string">
+            <column name="cat_name" not-null="true" />
+        </property>
+        <property name="catDescription" type="string">
+            <column name="cat_description" length="16777215" not-null="true" />
+        </property>
+        <property name="sortorder" type="long">
+            <column name="sortorder" not-null="true" />
+        </property>
+        <property name="fullname" type="string">
+            <column name="fullname" length="254" not-null="true" />
+        </property>
+        <property name="shortname" type="string">
+            <column name="shortname" length="15" not-null="true" />
+        </property>
+        <property name="idnumber" type="string">
+            <column name="idnumber" length="100" not-null="true" />
+        </property>
+        <property name="summary" type="string">
+            <column name="summary" length="16777215" not-null="true" />
+        </property>
+        <property name="startdate" type="long">
+            <column name="startdate" not-null="true" />
+        </property>
+        <property name="cost" type="string">
+            <column name="cost" length="10" not-null="true" />
+        </property>
+        <property name="currency" type="string">
+            <column name="currency" length="3" not-null="true" />
+        </property>
+        <property name="defaultroleid" type="short">
+            <column name="defaultroleid" not-null="true" />
+        </property>
+        <property name="defaultrolename" type="string">
+            <column name="defaultrolename" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

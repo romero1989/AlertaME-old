@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlQuestion" table="mdl_question" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="version" type="string">
+            <column name="version" not-null="true" />
+        </property>
+        <property name="category" type="long">
+            <column name="category" not-null="true" />
+        </property>
+        <property name="parent" type="long">
+            <column name="parent" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="questiontext" type="string">
+            <column name="questiontext" length="65535" not-null="true" />
+        </property>
+        <property name="questiontextformat" type="byte">
+            <column name="questiontextformat" not-null="true" />
+        </property>
+        <property name="image" type="string">
+            <column name="image" not-null="true" />
+        </property>
+        <property name="generalfeedback" type="string">
+            <column name="generalfeedback" length="65535" not-null="true" />
+        </property>
+        <property name="defaultgrade" type="long">
+            <column name="defaultgrade" not-null="true" />
+        </property>
+        <property name="penalty" type="double">
+            <column name="penalty" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="qtype" type="string">
+            <column name="qtype" length="20" not-null="true" />
+        </property>
+        <property name="length" type="long">
+            <column name="length" not-null="true" />
+        </property>
+        <property name="stamp" type="string">
+            <column name="stamp" not-null="true" />
+        </property>
+        <property name="hidden" type="boolean">
+            <column name="hidden" not-null="true" />
+        </property>
+        <property name="timecreated" type="long">
+            <column name="timecreated" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+        <property name="createdby" type="java.lang.Long">
+            <column name="createdby" />
+        </property>
+        <property name="modifiedby" type="java.lang.Long">
+            <column name="modifiedby" />
+        </property>
+    </class>
+</hibernate-mapping>

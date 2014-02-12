@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlEventsHandlers" table="mdl_events_handlers" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="eventname" type="string">
+            <column name="eventname" length="166" not-null="true" />
+        </property>
+        <property name="handlermodule" type="string">
+            <column name="handlermodule" length="166" not-null="true" />
+        </property>
+        <property name="handlerfile" type="string">
+            <column name="handlerfile" not-null="true" />
+        </property>
+        <property name="handlerfunction" type="string">
+            <column name="handlerfunction" length="16777215" />
+        </property>
+        <property name="schedule" type="string">
+            <column name="schedule" />
+        </property>
+        <property name="status" type="long">
+            <column name="status" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

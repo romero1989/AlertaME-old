@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/07/2013 19:45:29 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="alertame.moodle.MdlCourse" table="mdl_course" catalog="moodle">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="category" type="long">
+            <column name="category" not-null="true" />
+        </property>
+        <property name="sortorder" type="long">
+            <column name="sortorder" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="50" not-null="true" />
+        </property>
+        <property name="fullname" type="string">
+            <column name="fullname" length="254" not-null="true" />
+        </property>
+        <property name="shortname" type="string">
+            <column name="shortname" length="100" not-null="true" />
+        </property>
+        <property name="idnumber" type="string">
+            <column name="idnumber" length="100" not-null="true" />
+        </property>
+        <property name="summary" type="string">
+            <column name="summary" length="65535" />
+        </property>
+        <property name="format" type="string">
+            <column name="format" length="10" not-null="true" />
+        </property>
+        <property name="showgrades" type="byte">
+            <column name="showgrades" not-null="true" />
+        </property>
+        <property name="modinfo" type="string">
+            <column name="modinfo" />
+        </property>
+        <property name="newsitems" type="int">
+            <column name="newsitems" not-null="true" />
+        </property>
+        <property name="teacher" type="string">
+            <column name="teacher" length="100" not-null="true" />
+        </property>
+        <property name="teachers" type="string">
+            <column name="teachers" length="100" not-null="true" />
+        </property>
+        <property name="student" type="string">
+            <column name="student" length="100" not-null="true" />
+        </property>
+        <property name="students" type="string">
+            <column name="students" length="100" not-null="true" />
+        </property>
+        <property name="guest" type="byte">
+            <column name="guest" not-null="true" />
+        </property>
+        <property name="startdate" type="long">
+            <column name="startdate" not-null="true" />
+        </property>
+        <property name="enrolperiod" type="long">
+            <column name="enrolperiod" not-null="true" />
+        </property>
+        <property name="numsections" type="int">
+            <column name="numsections" not-null="true" />
+        </property>
+        <property name="marker" type="long">
+            <column name="marker" not-null="true" />
+        </property>
+        <property name="maxbytes" type="long">
+            <column name="maxbytes" not-null="true" />
+        </property>
+        <property name="showreports" type="short">
+            <column name="showreports" not-null="true" />
+        </property>
+        <property name="visible" type="boolean">
+            <column name="visible" not-null="true" />
+        </property>
+        <property name="hiddensections" type="byte">
+            <column name="hiddensections" not-null="true" />
+        </property>
+        <property name="groupmode" type="short">
+            <column name="groupmode" not-null="true" />
+        </property>
+        <property name="groupmodeforce" type="short">
+            <column name="groupmodeforce" not-null="true" />
+        </property>
+        <property name="defaultgroupingid" type="long">
+            <column name="defaultgroupingid" not-null="true" />
+        </property>
+        <property name="lang" type="string">
+            <column name="lang" length="30" not-null="true" />
+        </property>
+        <property name="theme" type="string">
+            <column name="theme" length="50" not-null="true" />
+        </property>
+        <property name="cost" type="string">
+            <column name="cost" length="10" not-null="true" />
+        </property>
+        <property name="currency" type="string">
+            <column name="currency" length="3" not-null="true" />
+        </property>
+        <property name="timecreated" type="long">
+            <column name="timecreated" not-null="true" />
+        </property>
+        <property name="timemodified" type="long">
+            <column name="timemodified" not-null="true" />
+        </property>
+        <property name="metacourse" type="boolean">
+            <column name="metacourse" not-null="true" />
+        </property>
+        <property name="requested" type="boolean">
+            <column name="requested" not-null="true" />
+        </property>
+        <property name="restrictmodules" type="boolean">
+            <column name="restrictmodules" not-null="true" />
+        </property>
+        <property name="expirynotify" type="boolean">
+            <column name="expirynotify" not-null="true" />
+        </property>
+        <property name="expirythreshold" type="long">
+            <column name="expirythreshold" not-null="true" />
+        </property>
+        <property name="notifystudents" type="boolean">
+            <column name="notifystudents" not-null="true" />
+        </property>
+        <property name="enrollable" type="boolean">
+            <column name="enrollable" not-null="true" />
+        </property>
+        <property name="enrolstartdate" type="long">
+            <column name="enrolstartdate" not-null="true" />
+        </property>
+        <property name="enrolenddate" type="long">
+            <column name="enrolenddate" not-null="true" />
+        </property>
+        <property name="enrol" type="string">
+            <column name="enrol" length="20" not-null="true" />
+        </property>
+        <property name="defaultrole" type="long">
+            <column name="defaultrole" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
